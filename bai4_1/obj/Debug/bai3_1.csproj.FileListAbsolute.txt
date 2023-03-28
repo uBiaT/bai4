@@ -1,0 +1,8 @@
+C:\Users\uBiaT\source\repos\uBiaT\bai3\bin\Debug\bai3.exe.config
+C:\Users\uBiaT\source\repos\uBiaT\bai3\bin\Debug\bai3.exe
+C:\Users\uBiaT\source\repos\uBiaT\bai3\bin\Debug\bai3.pdb
+C:\Users\uBiaT\source\repos\uBiaT\bai3\obj\Debug\bai3_1.csproj.AssemblyReference.cache
+C:\Users\uBiaT\source\repos\uBiaT\bai3\obj\Debug\bai3_1.csproj.SuggestedBindingRedirects.cache
+C:\Users\uBiaT\source\repos\uBiaT\bai3\obj\Debug\bai3_1.csproj.CoreCompileInputs.cache
+C:\Users\uBiaT\source\repos\uBiaT\bai3\obj\Debug\bai3.exe
+C:\Users\uBiaT\source\repos\uBiaT\bai3\obj\Debug\bai3.pdb
