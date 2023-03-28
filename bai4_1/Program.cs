@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,27 +11,39 @@ namespace bai4_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("<----------------------INPUT---------------------->");
-            Console.Write("Nhap mot so nguyen duong: ");
-            uint soNguyen = uint.Parse(Console.ReadLine());
-            Console.WriteLine();
-
-            double khaiCan = (double)Math.Sqrt(soNguyen);
-
-            Console.WriteLine("<----------------------OUTPUT--------------------->");
-            if (khaiCan == Math.Floor(khaiCan))
+            ConsoleKeyInfo key;
+            do
             {
-                Console.WriteLine($"{soNguyen} la so Chinh Phuong");
+                Console.Clear();
+                    Console.Write("Kiem tra so nguyen n chia het cho 3: (n)= ");
+                    int n = int.Parse(Console.ReadLine());
+
+                Console.Clear();
+                    if (ChiaHetCho3(n))
+                    {
+                        Console.WriteLine($"-> {n} chia het cho 3");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"-> {n} KHONG chia het cho 3");
+                    }
+                Console.WriteLine();
+
+                Console.WriteLine("<----------------------END------------------------>");
+                Console.WriteLine("Nhan phim BAT KY de tiep tuc / phim ESC de ket thuc");
+                key = Console.ReadKey();
+            } while (key.Key != ConsoleKey.Escape);
+        }
+        static Boolean ChiaHetCho3(int soNguyen)
+        {
+            if (soNguyen % 3 == 0)
+            {
+                return true;
             }
             else
             {
-                Console.WriteLine($"{soNguyen} KHONG PHAI la so Chinh Phuong");
+                return false;
             }
-            Console.WriteLine();
-
-            Console.WriteLine("<----------------------END------------------------>");
-            Console.WriteLine("Nhan phim bat ki de ket thuc");
-            Console.ReadKey();
         }
     }
 }
